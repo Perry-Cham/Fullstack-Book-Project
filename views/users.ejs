@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USER PAGE</title>
+</head>
+<body>
+   <h2>Welcome <%= user.username %> </h2> 
+  <h3>Here's our lovely book collection</h3>
+  <% books.forEach(book => { %>
+    <div>
+        <h4><%= book.title %></h4>
+        <p><%= book.author %></p>
+        <p><%= book.year %></p>
+        <button>Save</button>
+    </div>
+  <% }); %> 
+
+</body>
+</html>
