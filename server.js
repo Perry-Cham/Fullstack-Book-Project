@@ -57,6 +57,9 @@ app.get("/signup", (req, res) => {
 app.post("/loginform", (req, res) => {
   const user = users.users.find((user) => user.username == req.body.username);
   console.log(req.body.username);
+  if(req.body.username.toLowerCase() == 'admin' && req.body.password === user.password){
+    res.render("admin", { user: user, books: data.Books });
+  }
   if (user && req.body.password == user.password) {
     req.session.userLoggedIn = true;
     req.session.currentUser = user;
