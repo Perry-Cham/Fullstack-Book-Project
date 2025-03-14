@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Page</title>
+</head>
+<body>
+  <h2>Welcome <%= username %></h2>
+<% books.forEach(book => { %>
+<div class="book">
+<h4 class="title"><%= book.name %></h4>
+<p class="author"><%= book.author %></p>
+<p class="price"><%= book.price %></p>
+<button class="editBtn">Edit</button>
+<button class="deleteBtn">Edit</button>
+</div>
+<% });%>
+
+<div class="newBook">
+<h3>CREATE A NEW BOOK</h3>
+<input type="text" class="tit"></input>
+<input type="text" class="aut"></input>
+<input type="text" class="pri"></input>
+</div>
+
+    <script src = "../public/JS/admin.js"></script>
+   
+    </body >
+    </html >

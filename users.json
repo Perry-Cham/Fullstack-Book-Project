@@ -1,1 +1,16 @@
-{"users":[{"username":"Perry Cham","password":"12345","id":null}]}
+{
+  "users":[{
+    "username":"Perry Cham",
+    "password":"12345",
+    "id":null
+  },
+    {
+      "username":"TheMan",
+      "password":"3245",
+      "id":2
+    },
+    {
+      "username": "Admin",
+      "password": "12345",
+      "id":0
+    }]}
