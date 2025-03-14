@@ -1,14 +1,16 @@
 {
-  "users": [
+  "users":[{
+    "username":"Perry Cham",
+    "password":"12345",
+    "id":null
+  },
     {
-      "username": "Admin",
-      "password": "123456",
-      "id": 0
+      "username":"TheMan",
+      "password":"3245",
+      "id":2
     },
     {
-      "username": "Perry Cham",
+      "username": "Admin",
       "password": "12345",
-      "id": 1
-    }
-  ]
-}
+      "id":0
+    }]}
