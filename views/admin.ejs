@@ -8,23 +8,27 @@
 <body>
   <h2>Welcome <%= username %></h2>
 <% books.forEach(book => { %>
-<div class="book">
+<div class="book" data-id="<%= book.id %>">
 <h4 class="title"><%= book.name %></h4>
 <p class="author"><%= book.author %></p>
 <p class="price"><%= book.price %></p>
-<button class="editBtn">Edit</button>
-<button class="deleteBtn">Edit</button>
+<button class="editBtn" data-id="<%= book.id %>">Edit</button>
+<button class="deleteBtn" data-id="<%= book.id %>">Delete</button>
 </div>
 <% });%>
 
 <div class="newBook">
 <h3>CREATE A NEW BOOK</h3>
-<input type="text" class="tit"></input>
-<input type="text" class="aut"></input>
-<input type="text" class="pri"></input>
+<form action="/post" method="post">
+  <input type="text" class="tit" name="name" placeholder="Title"></input>
+  <input type="text" class="aut" name="author" placeholder="Author"></input>
+  <input type="text" class="pri" name="price" placeholder="Price"></input>
+  <button type="submit">Create Book</button>
+</form>
+
 </div>
 
-    <script src = "../public/JS/admin.js"></script>
+    <script src = "/JS/admin.js"></script>
    
     </body >
     </html >

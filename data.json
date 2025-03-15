@@ -1,18 +1,1 @@
-{
-  "Books": [
-    {
-      "name": "AND THEN THEY WERE NONE",
-      "author": "Agatha Christie",
-      "price": "250",
-      "id": 3
-    },
-    {
-      "name": "THE COUNT OF MONTE CRISTO",
-      "author": "Alexandre Dumas",
-      "price": "150",
-      "id": 4
-    },
-    { "name": "SUPERMAN", "author": "Geoff Jones", "price": "150", "id": 2 },
-    { "name": "BATMAN", "author": "Bob Kane", "price": "25", "id": 4 }
-  ]
-}
+{"Books":[{"name":"AND THEN THEY WERE NONE","author":"Agatha Christie","price":"250","id":3},{"name":"THE COUNT OF MONTE CRISTO","author":"Alexandre Dumas","price":"150","id":4},{"name":"BATMAN","author":"Bob Kane","price":"25","id":4},{"name":"FRANKENSTEIN","author":"Mary Shelly","price":"250","id":6}]}

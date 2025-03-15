@@ -82,6 +82,7 @@ req.session.currentUser = user;
 res.render("users", {
 user: user, books: data.Books
 });
+console.log(req.session.currentUser, req.session.userLoggedIn)
 } else {
 res.send("Invalid username or password");
 }
@@ -89,11 +90,15 @@ res.send("Invalid username or password");
 
 app.post("/post", (req, res) => {
 console.log(req.body);
-const nbook = req.body;
-nbook.id = data.Books.length + 1;
+const nbook = {
+  name: req.body.name,
+  author: req.body.author,
+  price: req.body.price,
+  id: data.Books.length + 1
+};
 
 data.Books.push(nbook);
-console.log(data);
+console.log(data, nbook);
 fs.writeFileSync("./data.json", JSON.stringify(data));
 console.log("./data.json");
 res.sendStatus(201);

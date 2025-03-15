@@ -1,13 +1,13 @@
 alert("hello")
-/*const booklist = document.querySelector(".booklist");
+const booklist = document.querySelector(".booklist");
 let Books;
 
-fetch("http://localhost:3000/data.json").then((response) =>
-response.json().then((data) => {
-const books = data.Books;
-console.log(books, typeof books);
-
-);
+fetch("http://localhost:3000/data.json")
+  .then((response) => response.json())
+  .then((data) => {
+    const books = data.Books;
+    console.log(books, typeof books);
+  });
 
 function createB(book) {}
 
@@ -15,12 +15,13 @@ const Addbtn = document.querySelector(".addBtn");
 const title = document.querySelector(".tit");
 const author = document.querySelector(".aut");
 const price = document.querySelector(".pri");
-const bookDivs = document.querySelectorAll('.Book')
+const bookDivs = document.querySelectorAll('.book')
 bookDivs.forEach((div) => {
-div.querySelector(".Delete").addEventListener("click", (e) => deleteB(e,
+  console.log(bookDivs, div)
+div.querySelector(".deleteBtn").addEventListener("click", (e) => deleteB(e,
 div))
 })
-function postB() {
+/* function postB() {
 const book = {
 name: title.value,
 author: author.value,
@@ -34,7 +35,7 @@ headers: {
 },
 body: JSON.stringify(book),
 });
-}
+} */
 
 function editB(parent) {
 
@@ -85,20 +86,19 @@ body: JSON.stringify(targetB)
 });
 }
 function deleteB(e, parent) {
-alert(`You have click the book with an ID of
-${e.target.getAttribute("data-id")}`)
+alert(`You have clicked the book with an ID of ${e.target.getAttribute("data-id")}`);
+const id = e.target.getAttribute("data-id");
 fetch(`/delete/${id}`, {
-        method: "DELETE",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(book),
-      }).then(() => {
-        booklist.removeChild(div);
-      });
-    });
+  method: "DELETE",
+  headers: {
+    "Content-Type": "application/json",
+  },
+}).then(() => {
+  document.removeChild(parent);
+});
 }
-addBtn.addEventListener("click", () => po());
+
+
 
 
 function CreateModal(text, yFunction, nFunction) {
@@ -107,4 +107,4 @@ const modalinner = document.createElement("div");
 const modalText = document.createElement("p");
 const modalBtnY = document.createElement("button");
 const modalBtnN = document.createElement("button");
-} */
+}
