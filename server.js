@@ -2,9 +2,10 @@ const express = require("express");
 const fs = require("fs");
 const bodyParser = require("body-parser");
 const session = require("express-session");
+const axios = require("axios");
 const app = express();
 const port = 3000;
-
+const data = JSON.parse(fs.readFileSync("./data.json"));
 app.listen(port, () => {
 console.log("server is running on port 3000");
 });
@@ -28,10 +29,9 @@ secure: false
 })
 );
 app.use(express.static('./public'))
-const data = JSON.parse(fs.readFileSync("./data.json"));
-console.log(data);
-const users = JSON.parse(fs.readFileSync("./users.json"));
 
+
+const users = JSON.parse(fs.readFileSync("./users.json"));
 app.get("/data.json", (req, res) => {
 fs.readFile("data.json", (err, data) => {
 res.send(data);
@@ -91,10 +91,10 @@ res.send("Invalid username or password");
 app.post("/post", (req, res) => {
 console.log(req.body);
 const nbook = {
-  name: req.body.name,
-  author: req.body.author,
-  price: req.body.price,
-  id: data.Books.length + 1
+name: req.body.name,
+author: req.body.author,
+price: req.body.price,
+id: data.Books.length + 1
 };
 
 data.Books.push(nbook);
@@ -154,3 +154,46 @@ res.clearCookie("connect.sid");
 res.redirect("/login");
 });
 });
+
+
+app.get('/download/:id', (req,res) => {
+bookId = req.params.id;
+const Book = data.Books.find(book => bookId == book.id)
+res.render('users/download', {book:Book})
+})
+
+
+// Function to fetch books by genre from Open Library API
+/*const fetchBooksByGenre = async (genre) => {
+try {
+const response = await
+axios.get(`https://openlibrary.org/subjects/${genre}.json?limit=10`);
+console.log(response.data)
+return response.data.works.map(book => ({
+title: book.title,
+author: book.authors?.[0]?.name || "Unknown",
+cover: book.cover_id ? `https://covers.openlibrary.org/b/id/${book.cover_id}-L.jpg`: null
+}));
+} catch (error) {
+console.error(`Error fetching books for genre "${genre}":`, error.message);
+return [];
+}
+};
+
+// Function to fetch multiple genres and save to `data.json`
+const saveBooksToJSON = async () => {
+const genres = ["fiction", "mystery", "science", "history", "adventure",
+"romance", "action"]; // Example genres
+let bookCollection = [];
+
+for (let genre of genres) {
+const books = await fetchBooksByGenre(genre);
+bookCollection = [...bookCollection, ...books];
+}
+
+fs.writeFileSync("./data.json", JSON.stringify(bookCollection, null, 2));
+console.log("Books saved to data.json!");
+};
+
+// Run the function
+saveBooksToJSON();*/

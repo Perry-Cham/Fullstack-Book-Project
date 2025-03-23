@@ -9,7 +9,7 @@
   <h2>Welcome <%= username %></h2>
 <% books.forEach(book => { %>
 <div class="book" data-id="<%= book.id %>">
-<h4 class="title"><%= book.name %></h4>
+<h4 class="title"><%= book.title %></h4>
 <p class="author"><%= book.author %></p>
 <p class="price"><%= book.price %></p>
 <button class="editBtn" data-id="<%= book.id %>">Edit</button>

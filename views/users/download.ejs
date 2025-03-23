@@ -1,0 +1,39 @@
+<html><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' href="public/CSS/users/download.css">
+  <title>P's Books</title>
+</head>
+  <body>
+  <section class="book-grid">
+    <div>
+      <img src="<%= book.cover  %>" alt="<% book.title + 'cover image' %>">
+    </div>
+    <div>
+    <div>
+      <h2 class="book-title"><%= book.title %></h2>
+     <p class="book-author"><%= book.author  %></p>
+     <p class="book-genre"><%= book.genre  %></p>
+     <p class="book-sypnosis"><%=  book.sypnosis %></p>
+     <p class="book-price"><%= book.price %></p>
+     <div>
+     <%  
+     let url = 'https://libgen.gs/index.php?req=';
+     let bookTitle = book.title;
+     bookTitle.split(" ").join("+") 
+     let downloadUrl = url + bookTitle;
+     %>
+     <a href="<%= downloadUrl %>" class="download">Libgen</a>
+     
+          <%  
+     let url2 = 'https://standardebooks.org/ebooks?query=';
+     let bookTitle2 = book.title;
+     bookTitle2.split(" ").join("+") 
+     let downloadUrl2 = url2 + bookTitle2;
+     %>
+     <a href="<%= downloadUrl2 %>" class="download">Standard Ebooks</a>
+     </div>
+    </div>
+  </section>
+  </body>
+</html>

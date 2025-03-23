@@ -3,13 +3,15 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "start":"node server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Perry Cham",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "axios": "^1.8.3",
     "bcryptjs": "^3.0.2",
     "body-parser": "^1.20.3",
     "cors": "^2.8.5",
@@ -17,6 +19,7 @@
     "express": "^4.21.2",
     "express-session": "^1.18.1",
     "fs": "^0.0.1-security",
-    "nodemon": "^3.1.9"
+    "nodemon": "^3.1.9",
+    "socket.io": "^4.8.1"
   }
 }

@@ -1,0 +1,31 @@
+body{
+padding: 0;
+margin: 0;
+}
+.form-container{
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: hsl(0,0%,78.8%);
+width: 100vw;
+height: 100vh;
+}
+.form{
+border-radius: 15px;
+background-color: white;
+padding: 1.5rem 1.75rem;
+}
+.form-title{
+text-align: center;
+}
+.form-input{
+margin-top: .125rem;
+margin-bottom: .75rem;
+}
+.submit-btn{
+border: none;
+border-radius: 5px;
+background-color: #000000;
+padding: 0.25rem .75rem;
+color:white;
+}

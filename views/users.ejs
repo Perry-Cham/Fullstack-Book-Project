@@ -1,21 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>USER PAGE</title>
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' href="public/CSS/users/users.css">
+  <title>P's Books</title>
 <body>
-   <h2>Welcome <%= user.username %> </h2> 
-  <h3>Here's our lovely book collection</h3>
-  <% books.forEach(book => { %>
+  <header>
     <div>
-        <h4><%= book.name %></h4>
-        <p><%= book.author %></p>
-        <p><%= book.year %></p>
-        <button>Save</button>
-    </div>
-  <% }); %> 
+<h2 class="logo">P's Books</h2>
+      </div>
+    <nav class="mobile-nav">
+      <ul class="nav-dropdown">
+        <li class="nav-links">
+          <a href="/savedBooks">My Books</a>
+          </li>
+        <li class="nav-links" >
+          <a href ="/readingList">Reading List</a>
+          </li>
+        <li class="nav-links" >
+          <a class="logout-btn" href="/logout">Logout</a>
+          </li>
+        <li></li>
+      </ul>
+    </nav>
+    </header>
+<main>
+  
+  <h2>Welcome <%= user.username %></h2>
+  <p>Here's our lovely book collection</p>
+<% books.forEach((book) => { %>
+<div>
+<h3 class="book-title"><%= book.title  %></h3>
+<p class="author"><%=  book.author%></p>
+<p class="genre"><%=  book.genre %></p>
+<p class="price"><%=  book.price %></p>
+<button class="save-btn">Save</button>
+<a class="download-btn" href="<%= `/download/${book.id}` %>">Download</a>
 
-</body>
-</html>
+</div>
+<%});%>
+    </main >
+    </body >
+    </html >
