@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' href="/CSS/Users/users.css">
+  <title>P's Books</title>
+<body class ="body">
+  <header class="header">
+    <div>
+<h2 class="logo">P's Books</h2>
+      </div>
+    <nav class="desktop-nav">
+      <ul class="nav">
+        <li class="nav-link">
+          <a href="users/savedBooks">My Books</a>
+          </li>
+        <li class="nav-link" >
+          <a href ="users/readingList">Reading List</a>
+          </li>
+        <li class="nav-link"><a href="users/News">News</a></li>
+        <li class="nav-link"><a href="/users/message">Message</a></li>
+          <a class="logout-btn" href="/logout">Logout</a>
+          </li>
+      </ul>
+    </nav>
+    
+        <nav class="mobile-nav slide-In">
+      <ul class="nav-dropdown">
+        <li class="nav-link">
+          <a class="nav-link-a"  href="/users/savedBooks">My Books</a>
+          </li>
+        <li class="nav-link" >
+          <a class="nav-link-a"  href ="/users/readingList">Reading List</a>
+          </li>
+        <li  class="nav-link">
+          <a class="nav-link-a"  href="/users/Message">Message</a></li>
+        <li class="nav-link" >
+          <a class="logout-btn nav-link-a"  href="/logout">Logout</a>
+          </li>
+        <li class="nav-link">
+          <a class="nav-link-a" href="users/News">News</a>
+          </li>
+      </ul>
+    </nav>
+    
+    <button class="menu-toggle-btn"></button>
+    </header>
+<main >
+ <section class="main-section">
+     <h2>Welcome <%= user.username %></h2>
+  <p>Here's our lovely book collection</p>
+<% books.forEach((book) => { %>
+<div>
+<h3 class="book-title"><%= book.title  %></h3>
+<p class="author"><%=  book.author%></p>
+<p class="genre"><%=  book.genre %></p>
+<p class="price"><%=  book.price %></p>
+<button data-id='<%= book.id %>' class="save-btn">Save</button>
+<a class="download-btn" href="<%= `users/download/${book.id}` %>">Download</a>
+
+</div>
+<%});%>
+ </section> 
+
+    </main >
+      <script type="module" src="JS/users/users.js"></script>
+    </body >
+    </html >

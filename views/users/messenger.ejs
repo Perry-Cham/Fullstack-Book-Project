@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script defer src="http://localhost:4000/socket.io/socket.io.js"></script>
+<title>Messages</title>
+</head>
+<body>
+  <header>
+    <h2>
+      P's Messenger
+    </h2>
+  </header>
+  <div class="active-users"></div>
+  <div class="message-history">
+  </div>
+    <form>
+      <input type="text" placeholder="type something">
+      <button type="submit">Send Messag</button>
+    </form>
+  <!--<script src="JS/users/messenger.js"></script>-->
+  <script>// Connect to the Socket.IO server
+import {io} from 'socket.io';
+alert('hello')
+const socket = io();
+// Log when connection is established
+socket.on('connect', () => {
+  console.log('Connected to server');
+});
+
+// Get form and input elements
+const form = document.querySelector('form');
+const input = document.querySelector('input');
+
+// Handle message sending
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  if (input.value) {
+    socket.emit('chat message', input.value);
+    input.value = '';
+  }
+});
+alert(form)
+// Listen for messages
+socket.on('chat message', (msg) => {
+  const messageHistory = document.querySelector('.message-history');
+  const messageElement = document.createElement('div');
+  messageElement.textContent = msg;
+  messageHistory.appendChild(messageElement);
+});
+
+    
+  </script>
+</body>
+</html>

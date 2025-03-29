@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon server.js",
-    "start":"node server.js"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "Perry Cham",
@@ -14,7 +14,8 @@
     "axios": "^1.8.3",
     "bcryptjs": "^3.0.2",
     "body-parser": "^1.20.3",
-    "cors": "^2.8.5",
+    "chart.js": "^4.4.8",
+    "cookie-parser": "^1.4.7",
     "ejs": "^3.1.10",
     "express": "^4.21.2",
     "express-session": "^1.18.1",
