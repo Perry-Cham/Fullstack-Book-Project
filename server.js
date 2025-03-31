@@ -2,15 +2,18 @@ const express = require("express");
 const fs = require("fs");
 const bodyParser = require("body-parser");
 const session = require("express-session");
-const userRouter = require('./routes/users/userRoutes');
+const userRouter = require("./routes/users/userRoutes");
 const app = express();
 const http = require("http");
 const { Server } = require("socket.io");
-const cookie = require('cookie-parser')
+const cookie = require("cookie-parser");
 const port = 3000;
 const data = JSON.parse(fs.readFileSync("./data.json"));
 const users = JSON.parse(fs.readFileSync("./users.json"));
 
+
+//IMPORT USER INSTANCE 
+const User = require('./modules/user-functions.js');
 // Create HTTP server
 const server = http.createServer(app);
 const io = new Server(server);
@@ -20,10 +23,12 @@ server.listen(port, () => {
 
 app.use(express.static("public"));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({
-  extended: true
-}));
-app.use(cookie())
+app.use(
+  bodyParser.urlencoded({
+    extended: true,
+  })
+);
+app.use(cookie());
 
 app.set("view engine", "ejs");
 
@@ -35,24 +40,31 @@ app.use(
     saveUninitialized: false,
     cookie: {
       maxAge: 24 * 60 * 60 * 1000,
-      secure: false
+      secure: false,
     }, // Set to true if using HTTPS
   })
 );
 
-app.use('/users', userRouter)
+app.use("/users", userRouter);
 
-app.get('/data.json', (req, res) => {
+app.get("/data.json", (req, res) => {
   //res.json(data)
-  res.json(data)
-})
+  res.json(data);
+});
 app.get("/", (req, res) => {
-  if (req.session.userLoggedIn && req.session.currentUser.username !== 'Admin') {
+  if (
+    req.session.userLoggedIn &&
+    req.session.currentUser.username !== "Admin"
+  ) {
     res.render("users/users", {
-      user: req.session.currentUser, books: data.Books
-    })
-  } else if (req.session.currentUser && req.session.currentUser.username == 'Admin') {
-    res.redirect('/admin')
+      user: req.session.currentUser,
+      books: data.Books,
+    });
+  } else if (
+    req.session.currentUser &&
+    req.session.currentUser.username == "Admin"
+  ) {
+    res.redirect("/admin");
   } else {
     res.render("sign up and login/login");
   }
@@ -61,9 +73,10 @@ app.get("/", (req, res) => {
 app.get("/admin", (req, res) => {
   if (req.session.currentUser.username === "Admin") {
     res.render("admin", {
-      username: "Admin", books: data.Books
-    })
-  } else res.render("sign up and login/login")
+      username: "Admin",
+      books: data.Books,
+    });
+  } else res.render("sign up and login/login");
 });
 
 app.get("/login", (req, res) => {
@@ -83,30 +96,43 @@ app.post("/loginform", (req, res) => {
     })*/
     req.session.currentUser = user;
     req.session.userLoggedIn = true;
-    res.redirect('/')
+    res.redirect("/");
     return;
   }
   //User Login
   if (user && req.body.password == user.password) {
     req.session.userLoggedIn = true;
     req.session.currentUser = user;
-    res.cookie('userId', user.id, {
+    res.cookie("userId", user.id, {
       httpOnly: true,
       secure: false,
-      maxAge: 24 * 60 * 60 * 1000
-    })
-    res.redirect("/")
+      maxAge: 24 * 60 * 60 * 1000,
+    });
+    res.redirect("/");
+    return
   } else {
     res.send("Invalid username or password");
   }
 });
 
+app.post("/signupform", (req, res) => {
+
+  const nuser = new User(req.body.username,  req.body.password, users.users.length + 1)
+  if (!users.users.find((user) => user.username === nuser.username)) {
+    users.users.push(nuser);
+    fs.writeFileSync("./users.json", JSON.stringify(users));
+    res.sendStatus(201);
+    res.redirect("/");
+  } else {
+    res.send(`Error: user ${req.body.username} already exists`);
+  }
+});
 app.post("/post", (req, res) => {
   const nbook = {
     name: req.body.name,
     author: req.body.author,
     price: req.body.price,
-    id: data.Books.length + 1
+    id: data.Books.length + 1,
   };
 
   data.Books.push(nbook);
@@ -116,18 +142,7 @@ app.post("/post", (req, res) => {
   res.sendStatus(201);
 });
 
-app.post("/signupform", (req, res) => {
-  const nuser = req.body;
-  if (!users.users.find((user) => user.username === nuser.username)) {
-    nuser.id = users.users.length + 1;
-    users.users.push(nuser);
-    fs.writeFileSync("./users.json", JSON.stringify(users));
-    res.sendStatus(201);
-    res.redirect('/')
-  } else {
-    res.send(`Error: user ${req.body.username} already exists`);
-  }
-});
+
 
 app.delete("/delete/:id", (req, res) => {
   const id = req.params.id;
@@ -148,7 +163,6 @@ app.put("/put/:id", (req, res) => {
 
 // Route to render the users.ejs file
 
-
 // Route to handle logout
 app.get("/logout", (req, res) => {
   req.session.destroy((err) => {
@@ -160,7 +174,9 @@ app.get("/logout", (req, res) => {
   });
 });
 
+// Add more socket event handlers as
+function hello() {
+  console.log("hello world");
+}
 
-
-  // Add more socket event handlers as needed
 

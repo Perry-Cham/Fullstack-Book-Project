@@ -23,6 +23,7 @@ text-align: center;
 .form-input{
 margin-top: .125rem;
 margin-bottom: .75rem;
+display:block;
 }
 .submit-btn{
 border: none;

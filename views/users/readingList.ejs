@@ -3,10 +3,86 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/CSS/User/readingList.css">
 <title>Reading List</title>
-meta
 </head>
 <body>
-body
+  <header class="header">
+    <div>
+      <h2 class="logo">P's Books</h2>
+    </div>
+
+    <nav class="mobile-nav">
+      <ul class="nav-dropdown">
+        <li class="nav-link">
+          <a class="nav-link-a" href="/">Home</a>
+        </li>
+        <li class="nav-link">
+          <a class="nav-link-a" href="/users/savedBooks">My Books</a>
+        </li>
+        <li class="nav-link">
+          <a class="nav-link-a" href="/users/readingList">Reading List</a>
+        </li>
+        <li class="nav-link">
+          <a class="nav-link-a" href="/users/Message">Message</a>
+        </li>
+        <li class="nav-link">
+          <a class="logout-btn nav-link-a" href="/logout">Logout</a>
+        </li>
+        <li class="nav-link">
+          <a class="nav-link-a" href="/users/News">News</a>
+        </li>
+      </ul>
+    </nav>
+    <button class="menu-toggle-btn"></button>
+  </header>
+  <main>
+    <section>
+      <div class="current-Books">
+        <h3>Current Books </h3>
+        
+  <div class="current-books-wrapper">
+  <% if (User.currentlyReading) { %>
+    <% User.currentlyReading.forEach(book => { %>
+      <div class="current-books">
+        <h4><%= book.title %> </h4>
+        <p><%= book.genre %> </p>
+        <p><%=  book.author%> </p>
+        <input disabled type="range" name="" id="" maxlength="500" value="50">
+        </div>
+    <% }) %>
+   
+  <% } %>
+  </div>
+        </div>
+      </div>
+    </section>
+<section>
+  <button class="goal-btn">
+    Set A Reading Goal
+  </button>
+</section>
+<section class="readingHistory">
+  <% if (User.readBooks !== []) { %>
+   <% User.readBooks.forEach(element => { %>
+    <div>
+      <div class="card-content">
+        <h3><%= book.title %></h3>
+        <p><%= book.genre %></p>
+        <p><%= book.author %></p>
+        <a href=<%= `download/${book.id}` %>  class="download-button"
+          >Download</a
+        >
+      </div>
+    </div>
+   <% }) %>
+  <% } else { %>
+    <div class="no-books-display">
+      <p>You haven't started reading anything yet</p>
+    </div>
+   <% } %> 
+</section>
+  </main>
+  <script type="module" src="/JS/users/readingList.js"></script>
 </body>
 </html>

@@ -1,72 +1,82 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="/CSS/Users/savedBooks.css">
-<title><%= username %>'s Books</title>
-</head>
-<body>
-  <header class="header">
-        <div>
-<h2 class="logo">P's Books</h2>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/Users/savedBooks.css" />
+    <title><%= username %>'s Books</title>
+  </head>
+  <body>
+    <header class="header">
+      <div>
+        <h2 class="logo">P's Books</h2>
       </div>
-      
-            <nav class="mobile-nav slide-In">
-      <ul class="nav-dropdown">
-        <li class="nav-link">
-          <a class="nav-link-a"  href="/">Home</a>
+
+      <nav class="mobile-nav">
+        <ul class="nav-dropdown">
+          <li class="nav-link">
+            <a class="nav-link-a" href="/">Home</a>
           </li>
-        <li class="nav-link">
-          <a class="nav-link-a"  href="/users/savedBooks">My Books</a>
+          <li class="nav-link">
+            <a class="nav-link-a" href="/users/savedBooks">My Books</a>
           </li>
-        <li class="nav-link" >
-          <a class="nav-link-a"  href ="/users/readingList">Reading List</a>
+          <li class="nav-link">
+            <a class="nav-link-a" href="/users/readingList">Reading List</a>
           </li>
-        <li  class="nav-link">
-          <a class="nav-link-a"  href="/users/Message">Message</a></li>
-        <li class="nav-link" >
-          <a class="logout-btn nav-link-a"  href="/logout">Logout</a>
+          <li class="nav-link">
+            <a class="nav-link-a" href="/users/Message">Message</a>
           </li>
-        <li class="nav-link">
-          <a class="nav-link-a" href="users/News">News</a>
+          <li class="nav-link">
+            <a class="logout-btn nav-link-a" href="/logout">Logout</a>
           </li>
-      </ul>
-    </nav>
-    <button class="menu-toggle-btn"></button>
-  </header>
-  <main class="main-section">
-  <div class="current-Books">
-    <h3>Currently Reading</h3>
-    <div class="book-wrapper">
-      
-    </div>
-  </div>
-<section>
-  <h3>Saved Books</h3>
-</section>
-<div class="saved-Books-wrapper">
-  <% books.forEach(book => {%>
-  <div class="Book">
-    <div class="card-image">
-      <img alt="<%= book.title + " " + "img" %>"  src="<%= book.cover %>" class="card-image-img">
-    </div>
-    <div class="card-content">
-      <h3 class="book-title">
-<%= book.title  %>
-</h3>
-<p class="author"><%=  book.author%></p>
-<p class="genre"><%=  book.genre %></p>
-<p class="price"><%=  book.price %></p>
-<a data-id='<%= book.id %>' class="read-btn">Start Reading</a>
-<a class="download-btn" href="/users/download/<%= book.id %>">Download</a>
-    <button class="delete-btn">&times;</button>
-    </div>
+          <li class="nav-link">
+            <a class="nav-link-a" href="/users/News">News</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="menu-toggle-btn"></button>
+    </header>
+    <main class="main-section">
+      <div class="current-Books">
+        <h3>Current Books </h3>
+<div class="current-books-wrapper">
+  <% if (User.currentlyReading) { %>
+    <% User.currentlyReading.forEach(book => { %>
+      <div class="current-books">
+        <h4><%= book.title %> </h4>
+        <p><%= book.genre %> </p>
+        <p><%=  book.author%> </p>
+        <input disabled type="range" name="" id="" maxlength="500" value="50">
+        </div>
+    <% }) %>
+   
+  <% } %>
 </div>
-<% });%>
-</div>
-  </main>
-<script type="module"  src="/JS/users/users.js"></script>
-<script type="module" src="/JS/users/savedBooks.js"></script>
-</body>
+        </div>
+      </div>
+      <section>
+        <h3>Saved Books</h3>
+        <h4>Here are your saved books <%= User.username %></h4>
+      </section>
+      <div class="saved-Books-wrapper">
+        <% User.savedBooks.forEach(book => { %>
+        <div>
+          <div class="card-content">
+            <h3><%= book.title %></h3>
+            <p><%= book.genre %></p>
+            <p><%= book.author %></p>
+            <p><%= book.price %></p>
+            <button data-id="<%= book.id %> " class="read-btn">Start Reading</button>
+            <button class="delete-btn">&times;</button>
+            <a href=<%= `download/${book.id}` %>  class="download-button"
+              >Download</a
+            >
+          </div>
+        </div>
+        <%}); %>
+      </div>
+    </main>
+    <script type="module" src="/JS/users/users.js"></script>
+    <script type="module" src="/JS/users/savedBooks.js"></script>
+  </body>
 </html>

@@ -1,4 +1,5 @@
 .header {
+  overflow-x: hidden;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -6,13 +7,13 @@
   flex-direction: row;
 }
 .header .mobile-nav {
-  position: absolute;
+  position: fixed;
   display: block;
   height: 100vh;
   width: 25vh;
   max-width: 280px;
-  left: -52%;
-  top: 50px;
+  left: -26vh;
+  top: 10%;
   z-index: 2;
   border: solid 2px;
   transition: all 0.8s;
@@ -37,9 +38,6 @@
   background-color: red;
   display: none;
   width: 45%;
-}
-.header .desktop-nav ul {
-  display: none;
 }
 .header .nav-link-a {
   text-decoration: none;
@@ -96,6 +94,14 @@
   color: #666;
 }
 
+@media only screen and (min-width: 550px) {
+  .desktop-nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+    flex-direction: row;
+  }
+}
 .saved-Books-wrapper {
   display: grid;
   padding: 1rem 0;
