@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="/CSS/User/readingList.css">
+<link rel="stylesheet" href="/CSS/Users/readingList.css">
 <title>Reading List</title>
 </head>
 <body>
@@ -11,7 +11,22 @@
     <div>
       <h2 class="logo">P's Books</h2>
     </div>
-
+      <nav class="desktop-nav">
+        <ul class="nav">
+          <li class="nav-link">
+            <a class="nav-link-a" href="/users/savedBooks">My Books</a>
+          </li>
+          <li class="nav-link">
+            <a class="nav-link-a" href="/users/readingList">Reading List</a>
+          </li>
+          <li class="nav-link">
+            <a class="nav-link-a" href="/users/News">News</a>
+            </li>
+          <li class="nav-link">
+            <a class='nav-link-a' href="/users/message">Message</a></li>
+          <li><a class="logout-btn nav-link-a" href="/logout">Logout</a></li>
+        </ul>
+      </nav>
     <nav class="mobile-nav">
       <ul class="nav-dropdown">
         <li class="nav-link">
@@ -48,7 +63,7 @@
         <h4><%= book.title %> </h4>
         <p><%= book.genre %> </p>
         <p><%=  book.author%> </p>
-        <input disabled type="range" name="" id="" maxlength="500" value="50">
+        <input disabled type="range" name="" id="" min="1" max="<book.pageCount" value="1">
         </div>
     <% }) %>
    

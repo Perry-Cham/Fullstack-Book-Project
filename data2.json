@@ -1,0 +1,935 @@
+[
+  {
+    "title": "The Wind in the Willows",
+    "author": "Kenneth Grahame",
+    "genre": ["Juvenile Fiction"],
+    "pageCount": 202,
+    "publishedDate": "1993",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=Mo7D3Je7_DMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=Mo7D3Je7_DMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+  },
+  {
+    "title": "The Golden Compass",
+    "author": "Philip Pullman",
+    "genre": ["Fiction"],
+    "pageCount": 372,
+    "publishedDate": "1997",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=cvbXm1rhJeIC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=cvbXm1rhJeIC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    }
+  },
+  {
+    "title": "The Voyage of the Dawn Treader",
+    "author": "Clive Staples Lewis",
+    "genre": ["Juvenile Fiction"],
+    "pageCount": 196,
+    "publishedDate": "1980",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=BvTfFGrRzsAC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=BvTfFGrRzsAC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    }
+  },
+  {
+    "title": "A Game of Thrones",
+    "author": "George R. R. Martin",
+    "genre": ["Fiction"],
+    "pageCount": 876,
+    "publishedDate": "2011",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=bIZiAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=bIZiAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    }
+  },
+  {
+    "title": "The Silver Chair",
+    "author": "Clive Staples Lewis",
+    "genre": ["Juvenile Fiction"],
+    "pageCount": 260,
+    "publishedDate": "1998",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=Pnqx6B2lF60C&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=Pnqx6B2lF60C&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    }
+  },
+  {
+    "title": "Harry Potter and the Deathly Hallows",
+    "author": "J. K. Rowling",
+    "genre": ["Juvenile Fiction"],
+    "pageCount": 870,
+    "publishedDate": "2007",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=JHEkAQAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=JHEkAQAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    }
+  },
+  {
+    "title": "The Lord of the Rings",
+    "author": "John Ronald Reuel Tolkien",
+    "genre": ["Fiction"],
+    "pageCount": 1176,
+    "publishedDate": "2001",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=ptHZAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=ptHZAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    }
+  },
+  {
+    "title": "Prince Caspian",
+    "author": "Clive Staples Lewis",
+    "genre": ["Children's stories"],
+    "pageCount": 190,
+    "publishedDate": "1990",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=38iSPwAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=38iSPwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    }
+  },
+  {
+    "title": "Moomin, Mymble and Little My",
+    "author": "Tove Jansson",
+    "genre": ["Children's stories"],
+    "pageCount": 24,
+    "publishedDate": "2001",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=x7gvAAAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=x7gvAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    }
+  },
+  {
+    "title": "Bridge to Terabithia",
+    "author": "Katherine Paterson",
+    "genre": ["Juvenile Fiction"],
+    "pageCount": 148,
+    "publishedDate": "1979",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=qGhxPIwXLikC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=qGhxPIwXLikC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    }
+  },
+  {
+    "title": "Time in Fiction",
+    "author": "Craig Bourne, Emily Caddick Bourne",
+    "genre": ["Literary Criticism"],
+    "pageCount": 280,
+    "publishedDate": "2016",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=4O9cCwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=4O9cCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+  },
+  {
+    "title": "Science Fact and Science Fiction",
+    "author": "Brian M. Stableford",
+    "genre": ["Fiction"],
+    "pageCount": 758,
+    "publishedDate": "2006",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=uefwmdROKTAC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=uefwmdROKTAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+  },
+  {
+    "title": "The Cognitive Value of Philosophical Fiction",
+    "author": "Jukka Mikkonen",
+    "genre": ["Science"],
+    "pageCount": 306,
+    "publishedDate": "2013-02-14",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=-0-pAgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=-0-pAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+  },
+  {
+    "title": "Science, Culture and Society",
+    "author": "Mark Erickson",
+    "genre": ["Science"],
+    "pageCount": 254,
+    "publishedDate": "2005-09-23",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=-NgajQBd_6AC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=-NgajQBd_6AC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+  },
+  {
+    "title": "Cloning",
+    "author": "Stephen D. Fairbanks",
+    "genre": ["Science"],
+    "pageCount": 252,
+    "publishedDate": "2004",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=jBWhaabgD3gC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=jBWhaabgD3gC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+  },
+  {
+    "title": "Companion to Science in the Twentieth Century",
+    "author": "John Krige, Dominique Pestre",
+    "genre": ["History"],
+    "pageCount": 988,
+    "publishedDate": "2003",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=aGCHLEkBKlQC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=aGCHLEkBKlQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+  },
+  {
+    "title": "Companion Encyclopedia of Science in the Twentieth Century",
+    "author": "John Krige, Dominique Pestre",
+    "genre": ["History"],
+    "pageCount": 979,
+    "publishedDate": "2013-11-05",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=Ia35AQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=Ia35AQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+  },
+  {
+    "title": "The Nobel Prize",
+    "author": "Burton Feldman",
+    "genre": ["History"],
+    "pageCount": 520,
+    "publishedDate": "2000",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=xnckeeTICn0C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=xnckeeTICn0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+  },
+  {
+    "title": "The Secret Life of Literature",
+    "author": "Lisa Zunshine",
+    "genre": ["Science"],
+    "pageCount": 337,
+    "publishedDate": "2022-03-15",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=crZNEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=crZNEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+  },
+  {
+    "title": "Astrofuturism",
+    "author": "De Witt Douglas Kilgore",
+    "genre": ["Literary Criticism"],
+    "pageCount": 308,
+    "publishedDate": "2003",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=2gN0QDliMDAC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=2gN0QDliMDAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+  },
+  {
+    "title": "A Game of Thrones",
+    "author": "George R. R. Martin",
+    "genre": ["Fiction"],
+    "pageCount": 876,
+    "publishedDate": "2011",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=bIZiAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=bIZiAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    }
+  },
+  {
+    "title": "4.50 from Paddington",
+    "author": "Agatha Christie",
+    "genre": ["Fiction"],
+    "pageCount": 228,
+    "publishedDate": "1987",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=6I9HvUVqJ70C&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=6I9HvUVqJ70C&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    }
+  },
+  {
+    "title": "A Murder is Announced",
+    "author": "Agatha Christie",
+    "genre": ["Fiction"],
+    "pageCount": 244,
+    "publishedDate": "1986",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=x9RHJ8_BfpwC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=x9RHJ8_BfpwC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    }
+  },
+  {
+    "title": "The Shape of Water",
+    "author": "Andrea Camilleri",
+    "genre": ["Fiction"],
+    "pageCount": 240,
+    "publishedDate": "2002",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=e1BlAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=e1BlAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    }
+  },
+  {
+    "title": "The Invisible Man",
+    "author": "Len Jenkin, Herbert George Wells",
+    "genre": ["Drama"],
+    "pageCount": 78,
+    "publishedDate": "2000",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=SCHqme8AluYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=SCHqme8AluYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+  },
+  {
+    "title": "The Surgeon",
+    "author": "Tess Gerritsen",
+    "genre": ["Fiction"],
+    "pageCount": 530,
+    "publishedDate": "2001",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=s5ulrjc71nIC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=s5ulrjc71nIC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    }
+  },
+  {
+    "title": "Cards on the Table",
+    "author": "Agatha Christie",
+    "genre": ["Fiction"],
+    "pageCount": 228,
+    "publishedDate": "1993",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=NGoFudTo7YsC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=NGoFudTo7YsC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    }
+  },
+  {
+    "title": "The Curious Incident of the Dog in the Night-time",
+    "author": "Mark Haddon",
+    "genre": ["Fiction"],
+    "pageCount": 288,
+    "publishedDate": "2003",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=I51aAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=I51aAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    }
+  },
+  {
+    "title": "The Black Tower",
+    "author": "P.D. James",
+    "genre": ["Fiction"],
+    "pageCount": 352,
+    "publishedDate": "2001-10-02",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=a4eRA77h4WEC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=a4eRA77h4WEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+  },
+  {
+    "title": "The ABC Murders",
+    "author": "Agatha Christie",
+    "genre": ["Detective and mystery stories, English"],
+    "pageCount": 224,
+    "publishedDate": "1993",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=BKjCQgAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=BKjCQgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    }
+  },
+  {
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "genre": ["Fiction"],
+    "pageCount": 388,
+    "publishedDate": "1980",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=EvqJCGeqKhsC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=EvqJCGeqKhsC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    }
+  },
+  {
+    "title": "Sons and Lovers",
+    "author": "David Herbert Lawrence",
+    "genre": ["Fiction"],
+    "pageCount": 652,
+    "publishedDate": "1977",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=FTDuAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=FTDuAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    }
+  },
+  {
+    "title": "To Sir Phillip, with Love",
+    "author": "Julia Quinn",
+    "genre": ["Fiction"],
+    "pageCount": 274,
+    "publishedDate": "2003",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=puA-l8kNhOYC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=puA-l8kNhOYC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    }
+  },
+  {
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "genre": ["Classic fiction"],
+    "pageCount": 0,
+    "publishedDate": "2012-01-31",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=XeowGQAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=XeowGQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    }
+  },
+  {
+    "title": "The Italian Girl",
+    "author": "Lucinda Riley",
+    "genre": ["Man-woman relationships"],
+    "publishedDate": "2015",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=ZlbsjwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=ZlbsjwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    }
+  },
+  {
+    "title": "Simple Gifts",
+    "author": "Judith McNaught, Jude Deveraux",
+    "genre": ["Fiction"],
+    "pageCount": 404,
+    "publishedDate": "2001-12",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=_y8kwT-j3sUC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=_y8kwT-j3sUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+  },
+  {
+    "title": "Above and Beyond",
+    "author": "Sandra Brown",
+    "genre": ["Fiction"],
+    "pageCount": 297,
+    "publishedDate": "1986",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=QES7mCcS4EwC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=QES7mCcS4EwC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    }
+  },
+  {
+    "title": "Love Only Once",
+    "author": "Johanna Lindsey",
+    "genre": ["England"],
+    "pageCount": 452,
+    "publishedDate": "1985",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=w4b-I_NSgXYC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=w4b-I_NSgXYC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    }
+  },
+  {
+    "title": "A Loving Scoundrel",
+    "author": "Johanna Lindsey",
+    "genre": ["Fiction"],
+    "pageCount": 528,
+    "publishedDate": "2004",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=OShhkoZC_9wC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=OShhkoZC_9wC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    }
+  },
+  {
+    "title": "Captivated",
+    "author": "Nora Roberts",
+    "genre": ["Fiction"],
+    "pageCount": 312,
+    "publishedDate": "2004-01-25",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=4TtmtWzIIpsC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=4TtmtWzIIpsC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    }
+  },
+  {
+    "title": "Four Past Midnight",
+    "author": "Stephen King",
+    "genre": ["Fiction"],
+    "pageCount": 792,
+    "publishedDate": "1990",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=y6cOAQAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=y6cOAQAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    }
+  },
+  {
+    "title": "Tales from the Shadowhunter Academy",
+    "author": "Cassandra Clare, Sarah Rees Brennan, Maureen Johnson, Robin Wasserman",
+    "genre": ["Juvenile Fiction"],
+    "pageCount": 672,
+    "publishedDate": "2016-11-15",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=gvB1DQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=gvB1DQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+  },
+  {
+    "title": "Misery",
+    "author": "Stephen King",
+    "genre": ["Fiction"],
+    "pageCount": 328,
+    "publishedDate": "1987",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=KbMhAQAAIAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=KbMhAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    }
+  },
+  {
+    "title": "Frankenstein",
+    "author": "Mary Shelley",
+    "genre": ["Juvenile Fiction"],
+    "pageCount": 196,
+    "publishedDate": "1994",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=4dHXkNcpIXgC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=4dHXkNcpIXgC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    }
+  },
+  {
+    "title": "The Green Mile",
+    "author": "Stephen King",
+    "genre": ["Coffey, John (Fictitious character)"],
+    "pageCount": 453,
+    "publishedDate": "2000",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=1lJmPwAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=1lJmPwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    }
+  },
+  {
+    "title": "Frankenstein",
+    "author": "Mary Wollstonecraft Shelley",
+    "genre": ["Fiction"],
+    "pageCount": 230,
+    "publishedDate": "1965",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=xFIN97PzxxYC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=xFIN97PzxxYC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    }
+  },
+  {
+    "title": "Asian Horror Encyclopedia",
+    "author": "Laurence C. Bush",
+    "genre": ["Drama"],
+    "pageCount": 250,
+    "publishedDate": "2001",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=9_RvVRPMFeIC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=9_RvVRPMFeIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+  },
+  {
+    "title": "The Dream-quest of Unknown Kadath",
+    "author": "Howard Phillips Lovecraft",
+    "genre": ["Fiction"],
+    "pageCount": 260,
+    "publishedDate": "1982-02",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=7fhW6PDYklgC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=7fhW6PDYklgC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    }
+  },
+  {
+    "title": "Thinner",
+    "author": "Stephen King, Richard Bachman",
+    "genre": ["Fiction"],
+    "pageCount": 324,
+    "publishedDate": "1985",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=1YP-hfna5ewC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=1YP-hfna5ewC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    }
+  },
+  {
+    "title": "Bloodcurdling Tales of Horror and the Macabre: The Best of H. P. Lovecraft",
+    "author": "H. P. Lovecraft",
+    "genre": ["Fiction"],
+    "pageCount": 392,
+    "publishedDate": "1982",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=3xNbAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=3xNbAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    }
+  },
+  {
+    "title": "An Echo in the Darkness",
+    "author": "Francine Rivers",
+    "genre": ["Fiction"],
+    "pageCount": 482,
+    "publishedDate": "2002",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=Irw7sl0ohTwC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=Irw7sl0ohTwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+  },
+  {
+    "title": "We Are Not Ourselves",
+    "author": "Matthew Thomas",
+    "genre": ["Fiction"],
+    "pageCount": 640,
+    "publishedDate": "2014-08-19",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=MWdOBAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=MWdOBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+  },
+  {
+    "title": "Just Once",
+    "author": "Karen Kingsbury",
+    "genre": ["Fiction"],
+    "pageCount": 336,
+    "publishedDate": "2023-11-14",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=S2_dEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=S2_dEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+  },
+  {
+    "title": "Ruth's Journey",
+    "author": "Donald McCaig",
+    "genre": ["Fiction"],
+    "pageCount": 384,
+    "publishedDate": "2014-10-14",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=u9O5BAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=u9O5BAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+  },
+  {
+    "title": "Psychopathology",
+    "author": "John Ernest Nicole",
+    "genre": ["Historical"],
+    "pageCount": 308,
+    "publishedDate": "1934",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=8FtWAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=8FtWAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    }
+  },
+  {
+    "title": "Allegiance",
+    "author": "Cayla Kluver",
+    "genre": ["Fiction"],
+    "pageCount": 501,
+    "publishedDate": "2012-02-28",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=LKCdiQb_SxIC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=LKCdiQb_SxIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+  },
+  {
+    "title": "Something Red",
+    "author": "Douglas Nicholas",
+    "genre": ["Fiction"],
+    "pageCount": 325,
+    "publishedDate": "2012-09-18",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=Xrz6AorNQMMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=Xrz6AorNQMMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+  },
+  {
+    "title": "An Echo in the Darkness",
+    "author": "Francine Rivers",
+    "genre": ["Fiction"],
+    "pageCount": 482,
+    "publishedDate": "2002",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=Irw7sl0ohTwC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=Irw7sl0ohTwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+  },
+  {
+    "title": "The Blood of Flowers",
+    "author": "Anita Amirrezvani",
+    "genre": ["American fiction"],
+    "pageCount": 0,
+    "publishedDate": "2007",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=I77yGAAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=I77yGAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    }
+  },
+  {
+    "title": "The Field of Swords",
+    "author": "Conn Iggulden",
+    "genre": ["Biographical fiction"],
+    "pageCount": 536,
+    "publishedDate": "2005"
+  },
+  {
+    "title": "The Blazing World",
+    "author": "Siri Hustvedt",
+    "genre": ["Fiction"],
+    "pageCount": 368,
+    "publishedDate": "2014-03-11",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=-676AgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=-676AgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+  },
+  {
+    "title": "The Bedford Glossary of Critical and Literary Terms",
+    "author": "Ross C. Murfin, Supryia M. Ray",
+    "genre": ["Literary Collections"],
+    "pageCount": 636,
+    "publishedDate": "2009",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=2EgqAQAAIAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=2EgqAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    }
+  },
+  {
+    "title": "You Made Me Love You",
+    "author": "John Edgar Wideman",
+    "genre": ["Fiction"],
+    "pageCount": 496,
+    "publishedDate": "2021-04-06",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=5EoiEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=5EoiEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+  },
+  {
+    "title": "We Are Not Ourselves",
+    "author": "Matthew Thomas",
+    "genre": ["Fiction"],
+    "pageCount": 640,
+    "publishedDate": "2014-08-19",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=MWdOBAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=MWdOBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+  },
+  {
+    "title": "Ruth's Journey",
+    "author": "Donald McCaig",
+    "genre": ["Fiction"],
+    "pageCount": 384,
+    "publishedDate": "2014-10-14",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=u9O5BAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=u9O5BAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+  },
+  {
+    "title": "Animal",
+    "author": "Lisa Taddeo",
+    "genre": ["Fiction"],
+    "pageCount": 336,
+    "publishedDate": "2021-06-08",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=jJ0tEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=jJ0tEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+  },
+  {
+    "title": "Readers' Liberation",
+    "author": "Jonathan Rose",
+    "genre": ["Business & Economics"],
+    "pageCount": 238,
+    "publishedDate": "2018",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=twpDDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=twpDDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+  },
+  {
+    "title": "City of Girls",
+    "author": "Elizabeth Gilbert",
+    "genre": ["Children of the rich"],
+    "pageCount": 0,
+    "publishedDate": "2019",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=6EGREAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=6EGREAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    }
+  },
+  {
+    "title": "The Blazing World",
+    "author": "Siri Hustvedt",
+    "genre": ["Fiction"],
+    "pageCount": 368,
+    "publishedDate": "2014-03-11",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=-676AgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=-676AgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+  },
+  {
+    "title": "Eat, Pray, Love",
+    "author": "Elizabeth Gilbert",
+    "genre": ["Biography & Autobiography"],
+    "pageCount": 385,
+    "publishedDate": "2007-03-05",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=QdCNeNx6LJUC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=QdCNeNx6LJUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+  },
+  {
+    "title": "Treasure Island",
+    "author": "Robert Louis Stevenson",
+    "genre": ["Fiction"],
+    "pageCount": 276,
+    "publishedDate": "2004",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=Oi9vfDvIuBUC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=Oi9vfDvIuBUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+  },
+  {
+    "title": "Robinson Crusoe",
+    "author": "Daniel Defoe, Anthony Masters",
+    "genre": ["Fiction"],
+    "pageCount": 100,
+    "publishedDate": "2014",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=tMbCQ7CM9wAC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=tMbCQ7CM9wAC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    }
+  },
+  {
+    "title": "Emil and the Detectives",
+    "author": "Cyrus Harry Brooks, Erich Kästner",
+    "genre": ["Adventure"],
+    "pageCount": 230,
+    "publishedDate": "1933",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=oLkNAQAAIAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=oLkNAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    }
+  },
+  {
+    "title": "River Boy",
+    "author": "Tim Bowler",
+    "genre": ["Fiction"],
+    "pageCount": 150,
+    "publishedDate": "2001",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=w6lrc-9EapgC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=w6lrc-9EapgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+  },
+  {
+    "title": "White Fang",
+    "author": "Jack London",
+    "genre": ["Adventure"],
+    "pageCount": 344,
+    "publishedDate": "1906",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=FZMXAAAAIAAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=FZMXAAAAIAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+  },
+  {
+    "title": "Robinson Crusoe",
+    "author": "Daniel Defoe",
+    "genre": ["Adventure"],
+    "pageCount": 256,
+    "publishedDate": "2004"
+  },
+  {
+    "title": "The Adventures of Tom Sawyer",
+    "author": "Mark Twain",
+    "genre": ["Adventure"],
+    "pageCount": 230,
+    "publishedDate": "1965",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=0S_uAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=0S_uAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    }
+  },
+  {
+    "title": "Harry Potter and the Chamber of Secrets",
+    "author": "J. K. Rowling",
+    "genre": ["Adventure"],
+    "pageCount": 251,
+    "publishedDate": "1998",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=bUMUvgAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=bUMUvgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    }
+  },
+  {
+    "title": "Fantastic Mr. Fox",
+    "author": "Roald Dahl",
+    "genre": ["Juvenile Fiction"],
+    "pageCount": 98,
+    "publishedDate": "1998",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=inZhHuo89T8C&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=inZhHuo89T8C&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    }
+  },
+  {
+    "title": "Ark Angel",
+    "author": "Anthony Horowitz",
+    "genre": ["Juvenile Fiction"],
+    "pageCount": 342,
+    "publishedDate": "2006",
+    "cover": {
+      "smallThumbnail": "http://books.google.com/books/content?id=IgNaAAAAYAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=IgNaAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    }
+  },
+  {
+    "title": "Digital Image Processing: Part I",
+    "author": "Huiyu Zhou, Jiahua Wu, Jianguo Zhang",
+    "pageCount": 72,
+    "publishedDate": "2010"
+  },
+  {
+    "title": "Concepts in Electric Circuits",
+    "author": "Wasif Naeem",
+    "genre": ["Electric circuits"],
+    "pageCount": 87,
+    "publishedDate": "2009"
+  },
+  {
+    "title": "Digital Image Processing: Part II",
+    "author": "Huiyu Zhou, Jiahua Wu, Jianguo Zhang",
+    "pageCount": 91,
+    "publishedDate": "2010"
+  },
+  {
+    "title": "Biological Signal Analysis",
+    "author": "Ramaswamy Palaniappan",
+    "pageCount": 137,
+    "publishedDate": "2011"
+  },
+  {
+    "title": "Personal Computers and Digital Signal Processing",
+    "author": "Unknown",
+    "pageCount": 121,
+    "publishedDate": "Unknown"
+  },
+  {
+    "title": "Project 2003",
+    "author": "Unknown",
+    "pageCount": 121,
+    "publishedDate": "Unknown"
+  },
+  {
+    "title": "Access 2010: Part II",
+    "author": "Unknown",
+    "pageCount": 201,
+    "publishedDate": "Unknown"
+  },
+  {
+    "title": "Word 2007 Advanced: Part II",
+    "author": "Unknown",
+    "pageCount": 113,
+    "publishedDate": "Unknown"
+  },
+  {
+    "title": "Project 2010 Introduction: Part II",
+    "author": "Unknown",
+    "pageCount": 94,
+    "publishedDate": "Unknown"
+  },
+  {
+    "title": "Microsoft Office Excel 2007",
+    "author": "Torben Lage Frandsen",
+    "genre": ["Business"],
+    "pageCount": 135,
+    "publishedDate": "2010"
+  }
+]

@@ -1,1 +1,29 @@
-@use 'partials/components'
+@use 'partials/components';
+$font-stack: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+.modal-overlay{
+  border:solid 2px;
+}
+.goal-form{
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translateY(50%);
+  font-family:$font-stack;
+  background: white;
+  border-radius: 10px;
+  width:clamp(250px, 40%, 450px);
+  padding:1rem 0.75rem;
+  label{
+    margin:.75rem 0;
+  }
+input{
+    display:block;
+    margin:.75rem 0;
+}
+select{
+  display:block;
+}
+fieldset{
+  margin: .75rem 0;
+}
+}

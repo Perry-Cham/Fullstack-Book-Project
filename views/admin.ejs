@@ -19,10 +19,19 @@
 
 <div class="newBook">
 <h3>CREATE A NEW BOOK</h3>
-<form action="/post" method="post">
+<form action="/post" method="post"> 
+<label for='name'>Enter a title</label>
   <input type="text" class="tit" name="name" placeholder="Title"></input>
+  <label for='author'>Enter the author</label>
   <input type="text" class="aut" name="author" placeholder="Author"></input>
+  <label for='price'>Enter a price</label>
   <input type="text" class="pri" name="price" placeholder="Price"></input>
+  
+    <label for=''>Page Count</label>
+  <input type="text" class="page" name="page" placeholder="Author"></input>
+  
+    <label>Sypnosis</label>
+  <input type="text" class="sypnosis" name="sypnosis" placeholder="Author"></input>
   <button type="submit">Create Book</button>
 </form>
 

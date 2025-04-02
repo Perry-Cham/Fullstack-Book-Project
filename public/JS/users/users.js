@@ -4,7 +4,7 @@ import { fetchData } from './readingList.js';
 const menuBtn = document.querySelector('.menu-toggle-btn');
 menuBtn.addEventListener("click", (e) => {
   const menu = e.target.parentNode.querySelector(".mobile-nav");
-
+console.log(menu)
   menu.classList.toggle('slide-In');
 
 })

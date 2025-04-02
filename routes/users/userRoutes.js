@@ -31,8 +31,19 @@ userRouter.get('/savedBooks', (req, res) => {
 });
 
 userRouter.get('/readingList', (req, res) => {
-  const user = req.session.currentUser;
-  res.render('users/readingList', {User:user});
+  if (!req.session.currentUser) return res.redirect('/');
+  
+  // Get fresh user data from users.json
+  const users = JSON.parse(fs.readFileSync('./users.json'));
+  const user = users.users.find(u => u.id == req.session.currentUser.id);
+  
+  // Ensure arrays exist
+  if (!user.currentlyReading) user.currentlyReading = [];
+  if (!user.readBooks) user.readBooks = [];
+  
+  res.render('users/readingList', { 
+    User: user
+  });
 });
 
 userRouter.get('/News', (req, res) => {
@@ -90,7 +101,7 @@ userRouter.post('/startReading/:id', (req, res) => {
   }
   
   // If using session, update it so that the UI (rendered ejs) is up-to-date.
-  if(req.session && req.session.currentUser && req.session.currentUser.id == userId) {
+  if(req.session.currentUser && req.session.currentUser.id == userId) {
     req.session.currentUser = user;
   }
   
