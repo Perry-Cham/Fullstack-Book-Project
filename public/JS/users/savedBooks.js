@@ -37,7 +37,7 @@ readBtns.forEach((btn) => {
     }).then((response) => {
       if (response.ok) {
         createSaveModal(
-          "Book Title",
+          `${book.title}`,
           "Congratulations you've just started a new book!"
         );
       }
