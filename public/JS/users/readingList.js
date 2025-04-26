@@ -1,8 +1,13 @@
+
 export function fetchData() {
   return fetch("/data.json")
     .then((response) => response.json())
     .catch((error) => console.error("Error fetching data:", error));
+  return fetch("/data.json")
+    .then((response) => response.json())
+    .catch((error) => console.error("Error fetching data:", error));
 }
+
 
 let Books = fetchData();
 const goalBtn = document.querySelector(".goal-btn");
@@ -10,9 +15,11 @@ if (goalBtn) {
   goalBtn.addEventListener("click", () => {
     const modalOverlay = document.createElement("section");
     /* const section4 = document.createElement("div"); */
+    /* const section4 = document.createElement("div"); */
 
     const goalForm = document.createElement("form");
     goalForm.method = "post";
+    goalForm.action = "/users/setGoal";
     goalForm.action = "/users/setGoal";
     goalForm.classList.add("goal-form");
     goalForm.innerHTML = `
@@ -45,6 +52,7 @@ if (goalBtn) {
 
     /* section4.appendChild(goalForm); */
     modalOverlay.classList.add("modal-overlay");
+    modalOverlay.appendChild(goalForm);
     modalOverlay.appendChild(goalForm);
     document.body.appendChild(modalOverlay);
     modalOverlay.scrollIntoView();
