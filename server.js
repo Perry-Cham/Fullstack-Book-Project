@@ -3,6 +3,7 @@ const axios = require('axios')
 const fs = require("fs");
 const bodyParser = require("body-parser");
 const session = require("express-session");
+const Filestore = require('session-file-store')(session)
 const userRouter = require("./routes/users/userRoutes");
 const app = express();
 const http = require("http");
@@ -36,6 +37,12 @@ app.set("view engine", "ejs");
 // Set up session middleware
 app.use(
   session({
+/*     store:new Filestore({ 
+  path:'./sessions',
+  ttl:60*60*24*1000,
+  reapInterval:3600,
+  retries:1
+    }), */
     secret: "your_secret_key", // Replace with a strong secret key
     resave: false,
     saveUninitialized: false,
@@ -179,7 +186,6 @@ app.get("/logout", (req, res) => {
 function hello() {
   console.log("hello world");
 }
-
 
 
 

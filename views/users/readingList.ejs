@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="/CSS/Users/readingList.css">
-<title>Reading List</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/CSS/Users/readingList.css">
+  <title>Reading List</title>
 </head>
+
 <body>
   <header class="header">
     <div>
       <h2 class="logo">P's Books</h2>
     </div>
-      <nav class="desktop-nav">
-        <ul class="nav">
-          <li class="nav-link">
-            <a class="nav-link-a" href="/users/savedBooks">My Books</a>
-          </li>
-          <li class="nav-link">
-            <a class="nav-link-a" href="/users/readingList">Reading List</a>
-          </li>
-          <li class="nav-link">
-            <a class="nav-link-a" href="/users/News">News</a>
-            </li>
-          <li class="nav-link">
-            <a class='nav-link-a' href="/users/message">Message</a></li>
-          <li><a class="logout-btn nav-link-a" href="/logout">Logout</a></li>
-        </ul>
-      </nav>
+    <nav class="desktop-nav">
+      <ul class="nav">
+        <li class="nav-link">
+          <a class="nav-link-a" href="/users/savedBooks">My Books</a>
+        </li>
+        <li class="nav-link">
+          <a class="nav-link-a" href="/users/readingList">Reading List</a>
+        </li>
+        <li class="nav-link">
+          <a class="nav-link-a" href="/users/News">News</a>
+        </li>
+        <li class="nav-link">
+          <a class='nav-link-a' href="/users/message">Message</a>
+        </li>
+        <li><a class="logout-btn nav-link-a" href="/logout">Logout</a></li>
+      </ul>
+    </nav>
     <nav class="mobile-nav">
       <ul class="nav-dropdown">
         <li class="nav-link">
@@ -55,49 +58,99 @@
     <section>
       <div class="current-Books">
         <h3>Current Books </h3>
-        
-  <div class="current-books-wrapper">
-  <% if (User.currentlyReading) { %>
-    <% User.currentlyReading.forEach(book => { %>
-      <div class="current-books">
-        <h4><%= book.title %> </h4>
-        <p><%= book.genre %> </p>
-        <p><%=  book.author%> </p>
-        <input disabled type="range" name="" id="" min="1" max="<book.pageCount" value="1">
-        </div>
-    <% }) %>
-   
-  <% } %>
-  </div>
+        <div class="current-books-wrapper">
+          <% if (User.currentlyReading && User.currentlyReading.length > 0) { %>
+          <% User.currentlyReading.forEach(book => { %>
+          <div class="current-books">
+            <h4><%= book.title %> </h4>
+            <p><%= book.genre %> </p>
+            <p><%= book.author %> </p>
+            <input disabled type="range" min="1" max="<%= book.pageCount %>" value="<%= book.currentPage%>">
+            <p><%= book.currentPage%>/<%= book.pageCount%></p>
+            <p><%= ((book.currentPage / book.pageCount) * 100).toFixed(1) %>%</p>
+            <div class="page-num-edit">
+              <button class='page-btn' data-id="<%= book.id%>">Set Current Page</button>
+            </div>
+          </div>
+          <% }) %>
+          <% } else { %>
+          <div class="no-books-display">
+            <p>No books currently being read.</p>
+          </div>
+          <% } %>
         </div>
       </div>
     </section>
-<section>
-  <button class="goal-btn">
-    Set A Reading Goal
-  </button>
-</section>
-<section class="readingHistory">
-  <% if (User.readBooks !== []) { %>
-   <% User.readBooks.forEach(element => { %>
-    <div>
-      <div class="card-content">
-        <h3><%= book.title %></h3>
-        <p><%= book.genre %></p>
-        <p><%= book.author %></p>
-        <a href=<%= `download/${book.id}` %>  class="download-button"
-          >Download</a
-        >
+
+    <section>
+      <button class="goal-btn">
+        Set A Reading Goal
+      </button>
+      <button class="study-goal-btn">
+        Set A Study Goal
+      </button>
+      <div class="goal-progress">
+
+        <h2>Goal Progress</h2>
+        <div>
+          <div>
+            <label for="pages">Days Left</label>
+            <p><%= User.readingGoal.daysLeft || 0 %></p>
+          </div>
+
+          <div>
+            <label for="pages">Books Progress</label>
+            <input max="<%= User.readingGoal.targetNmberOfBooks || 1 %>" type="range" value="<%= User.readingGoal.readBooks.length || 0 %>">
+
+            <p><%= ((User.readingGoal.readBooks.length || 0) / (User.readingGoal.targetNumberOfBooks || 1) * 100).toFixed(2) %>%</p>
+          </div>
+        </div>
+        <div>
+          <h2>Reading Progress</h2>
+          <canvas class="reading-chart"></canvas>
+        </div>
       </div>
-    </div>
-   <% }) %>
-  <% } else { %>
-    <div class="no-books-display">
-      <p>You haven't started reading anything yet</p>
-    </div>
-   <% } %> 
-</section>
+      
+      <% if (User.studyGoal){%>
+      <div class="study-goal">
+        <h2>Study Goal Progress</h2>
+        <div>
+          <h3><%= User.studyGoal.mainTopic %></h3>
+          <article>
+            <% User.studyGoal.subTopics.forEach(topic => {%>
+            <div class="study-sub-topic" data-id="<%= topic.id %>">
+              <p><%= topic.topicName %></p>
+              <span class="study-finish-btn">&CircleTimes;</span>
+            </div>
+            <% })%>
+          </article>
+        </div>
+      </div>
+      <%}%>
+    </section>
+
+    <section class="readingHistory">
+      <% if (readBooks && readBooks.length > 0) { %>
+      <% readBooks.forEach(book => { %>
+      <div>
+        <div class="card-content">
+          <h3><%= book.title %></h3>
+          <p><%= book.genre %></p>
+          <p><%= book.author %></p>
+          <a href="<%= `download/${book.id}` %>" class="download-button">Download</a>
+        </div>
+      </div>
+      <% }) %>
+      <% } else { %>
+      <div class="no-books-display">
+        <p>You haven't started reading anything yet.</p>
+      </div>
+      <% } %>
+    </section>
+
   </main>
+  <script type="module" src="/JS/modules/chart.umd.js"></script>
   <script type="module" src="/JS/users/readingList.js"></script>
 </body>
+
 </html>

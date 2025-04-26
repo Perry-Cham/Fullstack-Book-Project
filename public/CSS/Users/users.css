@@ -6,6 +6,7 @@
   align-items: center;
   flex-direction: row;
 }
+
 .header .mobile-nav {
   position: fixed;
   display: block;
@@ -19,6 +20,7 @@
   transition: all 0.8s;
   background-color: black;
 }
+
 .header .mobile-nav ul {
   list-style: none;
   padding: 0;
@@ -28,20 +30,25 @@
   align-items: center;
   flex-direction: column;
 }
+
 .header .mobile-nav ul .nav-link {
   padding: 0.75rem 0;
 }
+
 .header .mobile-nav ul .nav-link .nav-link > a {
   color: white;
 }
+
 .header .desktop-nav {
   display: none;
   width: 45%;
 }
+
 .header .nav-link-a {
   text-decoration: none;
   color: white;
 }
+
 .header .menu-toggle-btn {
   width: 1.5rem;
   height: 1.5rem;
@@ -89,6 +96,7 @@
   cursor: pointer;
   color: #333;
 }
+
 .modal-close-btn:hover {
   color: #666;
 }
@@ -116,6 +124,6 @@
   .header .desktop-nav ul li .nav-link-a {
     color: black;
   }
-}
+} 
 
 /*# sourceMappingURL=users.css.map */
