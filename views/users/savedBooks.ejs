@@ -57,7 +57,8 @@
     <button class="menu-toggle-btn"></button>
   </header>
   <main class="main-section">
-    <div class="current-Books">
+    <section>
+          <div class="current-Books">
       <h3>Current Books </h3>
       <div class="current-books-wrapper">
         <% if (User.currentlyReading) { %>
@@ -83,13 +84,16 @@
       </div>
     </div>
     </div>
+    </section>
+
+
     <section>
       <h3>Saved Books</h3>
       <h4>Here are your saved books <%= User.username %>
       </h4>
     </section>
     <div class="saved-Books-wrapper">
-      <% User.savedBooks.forEach(book=> { %>
+      <% if(Object.keys(User.savedBooks) > 0){User.savedBooks.forEach(book=> { %>
         <div>
           <div class="card-content">
             <h3>
@@ -110,7 +114,9 @@
               >Download</a>
           </div>
         </div>
-        <%}); %>
+        <%})}else{ %>
+        <p>You haven't saved any books yet, newly saved books will appear here.</p>
+        <% }; %>
     </div>
   </main>
   <script type="module" src="/JS/users/users.js"></script>

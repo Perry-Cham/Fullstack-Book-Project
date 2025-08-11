@@ -5,92 +5,21 @@
       "username": "Perry",
       "password": "12345",
       "id": 2,
-      "savedBooks": [
-        {
-          "title": "Frankenstein or The Modern Prometheus",
-          "author": "Mary Shelley",
-          "cover": "https://covers.openlibrary.org/b/id/12356249-L.jpg",
-          "price": 334,
-          "genre": "Gothic Fiction",
-          "id": 9,
-          "sypnosis": ""
-        },
-        {
-          "title": "The Man Who Was Thursday",
-          "author": "Gilbert Keith Chesterton",
-          "cover": "https://covers.openlibrary.org/b/id/8242857-L.jpg",
-          "price": 495,
-          "genre": "Mystery",
-          "id": 18,
-          "sypnosis": ""
-        },
-        {
-          "title": "The Secret Adversary",
-          "author": "Agatha Christie",
-          "cover": "https://covers.openlibrary.org/b/id/14590159-L.jpg",
-          "price": 283,
-          "genre": "Mystery",
-          "id": 14,
-          "sypnosis": "I"
-        }
-      ],
-      "readingHistory": ["18", "14"],
+      "savedBooks": [],
+      "readingHistory": [],
       "readingGoal": {
         "inProgress": true,
         "targetNumberOfBooks": "2",
         "deadline": "2025-4-17",
-        "readBooks": [
-          {
-            "title": "Frankenstein or The Modern Prometheus",
-            "author": "Mary Shelley",
-            "cover": "https://covers.openlibrary.org/b/id/12356249-L.jpg",
-            "price": 334,
-            "genre": "Gothic Fiction",
-            "id": 9,
-            "sypnosis": "",
-            "pageCount": 220,
-            "publishedDate": "1846",
-            "readingHistory": [
-              { "date": "2025-04-23T12:11:56.610Z", "pagesRead": 219 }
-            ],
-            "currentPage": "220"
-          }
-        ],
+        "readBooks": [],
         "duration": "1",
         "durationUnit": "week",
         "goalName": "novelTarget",
         "startDate": "2025-04-16T14:31:16.797Z",
         "readingHours": "2"
       },
-      "currentlyReading": [
-        {
-          "title": "The Man Who Was Thursday",
-          "author": "Gilbert Keith Chesterton",
-          "cover": "https://covers.openlibrary.org/b/id/8242857-L.jpg",
-          "price": 495,
-          "genre": "Mystery",
-          "id": "18",
-          "sypnosis": "",
-          "pageCount": 165,
-          "publishedDate": "2015-04-28",
-          "readingHistory": [
-            { "date": "2025-04-15T15:42:56.193Z", "pagesRead": 9 },
-            { "date": "2025-04-16T12:01:17.387Z", "pagesRead": 10 }
-          ],
-          "currentPage": "20"
-        }
-      ],
-      "studyGoal": {
-        "active": true,
-        "subTopics": [
-          { "topicName": "Forces", "studied": false, "id": 0 },
-          { "topicName": "Work, Energy and Power ", "studied": false, "id": 1 },
-          { "topicName": "Introduction", "studied": false, "id": 2 }
-        ],
-        "duration": "1",
-        "durationUnit": "weeks",
-        "startDate": "2025-04-25T14:28:41.037Z"
-      }
+      "currentlyReading": [],
+      "studyGoal": {}
     },
     {
       "username": "Larry",

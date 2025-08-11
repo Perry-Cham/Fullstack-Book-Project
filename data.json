@@ -41,7 +41,7 @@
       "genre": "Classic Literature",
       "id": 4,
       "sypnosis": "In the bustling, foggy streets of Victorian London, Ebenezer Scrooge, a miserly old businessman, spends his days counting coins and shunning the cheer of Christmas, much to the dismay of his overworked clerk, Bob Cratchit, and his jovial nephew, Fred. On a chilling Christmas Eve, Scrooge is visited by the ghost of his long-dead partner, Jacob Marley, who appears bound in chains and warns of a spectral journey ahead. Three spirits—the nostalgic Ghost of Christmas Past, the hearty Ghost of Christmas Present, and the ominous Ghost of Christmas Yet to Come—soon arrive, each guiding Scrooge through visions of his life and the lives of those around him, from forgotten joys to present struggles. Dickens’ heartwarming story unfolds as a festive exploration of regret, compassion, and the chance for renewal, set against a backdrop of snowy streets and glowing hearths.",
-      "pageCount": "Unknown",
+      "pageCount": "220",
       "publishedDate": "2015-09-15"
     },
     {
@@ -250,7 +250,7 @@
       "genre": "Philosophy",
       "id": 23,
       "sypnosis": "In this ancient Roman poem, Lucretius sets out to explain the workings of the universe through the lens of Epicurean thought, weaving a tapestry of ideas that stretch from the stars to the smallest grains of matter. Writing in vivid Latin verse, he explores the nature of atoms, the vastness of the cosmos, and the fleeting beauty of life on earth, all while challenging the fears of gods and death that grip his fellow men. His words paint scenes of swirling dust, crashing waves, and the quiet cycles of seasons, offering a vision of a world governed by chance and reason rather than divine will. Lucretius’ work stands as a philosophical journey, inviting readers to find peace in understanding the natural order amidst the grandeur of existence.",
-      "pageCount": "Unknown",
+      "pageCount": "300",
       "publishedDate": "1631"
     },
     {
@@ -360,20 +360,10 @@
       "genre": "Religious",
       "id": 33,
       "sypnosis": "This vast collection of sacred writings, spanning the Old and New Testaments, offers a tapestry of stories, laws, and teachings that have shaped faith for millennia, penned by many hands across centuries. The Old Testament opens with the creation of the world, follows the trials of figures like Abraham and Moses through deserts and promised lands, and sings through the poetry of psalms and the warnings of prophets. The New Testament shifts to the dusty roads of Judea, where Jesus of Nazareth gathers followers with parables and acts of compassion, joined by disciples like Peter and Mary Magdalene. A cornerstone of spiritual life, it weaves history and hope into a narrative that resonates across time and cultures.",
-      "pageCount": "Unknown",
+      "pageCount": "1500",
       "publishedDate": "1992"
     },
-    {
-      "title": "A Christmas Carol",
-      "author": "Charles Dickens",
-      "cover": "https://covers.openlibrary.org/b/id/13299222-L.jpg",
-      "price": 110,
-      "genre": "Classic Literature",
-      "id": 34,
-      "sypnosis": "Ebenezer Scrooge, a stingy old man in Victorian London, grumbles through his days, shunning the warmth of Christmas and the pleas of his nephew Fred and clerk Bob Cratchit for holiday cheer. On a frosty Christmas Eve, he’s startled by the ghost of his former partner, Jacob Marley, who foreshadows visits from three spirits eager to show Scrooge the world through their eyes. From the memories of his youth to the struggles of the present and a glimpse of what might lie ahead, Scrooge is swept into a night of reflection amid the glow of candles and the chill of winter streets. Dickens’ festive tale unfolds with a gentle nudge toward kindness, wrapped in the sights and sounds of a holiday season poised for transformation.",
-      "pageCount": "Unknown",
-      "publishedDate": "2015-09-15"
-    },
+
     {
       "title": "Adventures of Huckleberry Finn",
       "author": "Mark Twain",
@@ -507,14 +497,14 @@
       "publishedDate": "2023-05-03"
     },
     {
-      "title": "Vingt mille lieues sous les mers",
+      "title": "Around The World In Eighty Days",
       "author": "Jules Verne",
       "cover": "https://covers.openlibrary.org/b/id/6573517-L.jpg",
       "price": 108,
       "genre": "Science Fiction",
       "id": 47,
       "sypnosis": "Professor Pierre Aronnax, a French marine scholar, sets sail to investigate a mysterious ‘narwhal’ plaguing the seas, joined by his steadfast servant Conseil and the rugged harpooner Ned Land, only to find themselves aboard the Nautilus, a marvel of a submarine. Its commander, the enigmatic Captain Nemo, reveals a world beneath the waves, from coral gardens to sunken wrecks, all seen through the vessel’s glass ports as they glide through ocean depths. Aronnax marvels at the science and secrecy of Nemo’s domain, while Ned chafes at their confinement, their journey weaving through currents and wonders that defy the surface world. Verne’s vision dives into a realm of discovery and tension, blending awe with the pull of freedom.",
-      "pageCount": "Unknown",
+      "pageCount": "220",
       "publishedDate": "1965"
     },
     {
@@ -635,7 +625,7 @@
       "genre": "Gothic Fiction",
       "id": 58,
       "sypnosis": "Jane Eyre, a plain but spirited orphan, endures a harsh childhood under a cruel aunt and a bleak school, emerging with a fierce will to carve her own path in Victorian England. Hired as a governess at Thornfield Hall, she tends to the bright young Adele and meets Mr. Rochester, the estate’s brooding master, whose sharp wit and hidden depths draw her in. The mansion’s shadowy corridors and strange sounds hint at secrets, while Jane navigates her place among its servants and visitors, from the kind Mrs. Fairfax to the elegant Blanche Ingram. Brontë’s gothic romance unfolds with strength and mystery, tracing a woman’s quest for love and independence in a world of stone and storm.",
-      "pageCount": "Unknown",
+      "pageCount": "300",
       "publishedDate": "2024-11-22"
     },
     {
@@ -734,7 +724,7 @@
       "genre": "Fantasy",
       "id": 67,
       "sypnosis": "Magnus Chase, a scrappy Boston teen scraping by on the streets, discovers he’s tied to Norse gods when a fiery encounter lands him in Valhalla, a hall of warriors ruled by Odin’s stern gaze. With a magical sword and a destiny he didn’t ask for, he teams with a quirky crew—a fierce Valkyrie, a stylish elf, and a gruff dwarf—to face a world of trolls, giants, and Loki’s sly whispers across the Nine Realms. From city rooftops to misty shores, Magnus stumbles through myths and mischief, his wit as sharp as his blade. Riordan’s tale crackles with humor and myth, a wild ride through a modern saga of gods and guts.",
-      "pageCount": "Unknown",
+      "pageCount": "300",
       "publishedDate": "2017-04-04"
     },
     {
@@ -745,7 +735,7 @@
       "genre": "Adventure",
       "id": 68,
       "sypnosis": "Kurt Austin, a daring operative for NUMA, dives into the seas’ depths when a luxury liner vanishes, its fate a puzzle tied to whispers of a high-stakes scheme lurking beneath the waves. With his trusty team—including the quick-thinking Joe Zavala—he sails through sunlit waters and shadowed wrecks, facing foes who wield tech and treachery with equal skill. From ocean swells to hidden ports, their hunt unfolds with gadgets, guts, and the salty tang of adventure, chasing a mystery that ripples far beyond the horizon. Cussler’s thriller surges with action and the pull of the unknown, a nautical chase in a world of sunken secrets.",
-      "pageCount": "Unknown",
+      "pageCount": "300",
       "publishedDate": "2025-04-10"
     },
     {
@@ -774,6 +764,8 @@
       "title": "The Government Inspector",
       "author": "Nikolai Galov",
       "price": "205",
+      "cover":"",
+      "sypnosis":"In a small Russian town, a series of absurd misunderstandings unfolds as a low-ranking official, mistaken for a high-ranking government inspector, is showered with bribes and hospitality by the town's corrupt officials. As the impostor, Anton Antonovich Khlestakov, revels in his newfound power and influence, he exposes the hypocrisy and corruption of the town's leaders, leading to a series of comedic and chaotic events. Through biting satire and social commentary, Gogol critiques the bureaucratic excesses and moral decay of 19th-century Russia, exposing the absurdity of a system where appearances often triumph over reality.",
       "id": 71,
       "pageCount": 161,
       "publishedDate": "2016-05-23"

@@ -1,21 +1,27 @@
 const express = require("express");
+const mongoose = require("mongoose")
 const axios = require('axios')
 const fs = require("fs");
 const bodyParser = require("body-parser");
 const session = require("express-session");
 const Filestore = require('session-file-store')(session)
 const userRouter = require("./routes/users/userRoutes");
+const Books = require("./models/book-model.js")
+const User = require("./models/user-model.js")
 const app = express();
 const http = require("http");
 const { Server } = require("socket.io");
 const cookie = require("cookie-parser");
 const port = 3000;
-const data = JSON.parse(fs.readFileSync("./data.json"));
+
 const users = JSON.parse(fs.readFileSync("./users.json"));
 
 
-//IMPORT USER INSTANCE 
-const User = require('./modules/user-functions.js');
+let data;
+Books.find().then((result) => {data = result
+console.log(data.length)
+})
+User.insertMany(users.users) 
 // Create HTTP server
 const server = http.createServer(app);
 const io = new Server(server);
@@ -66,7 +72,7 @@ app.get("/", (req, res) => {
   ) {
     res.render("users/users", {
       user: req.session.currentUser,
-      books: data.Books,
+      books: data,
     });
   } else if (
     req.session.currentUser &&
@@ -82,7 +88,7 @@ app.get("/admin", (req, res) => {
   if (req.session.currentUser.username === "Admin") {
     res.render("admin", {
       username: "Admin",
-      books: data.Books,
+      books: data,
     });
   } else res.render("sign up and login/login");
 });
@@ -100,7 +106,7 @@ app.post("/loginform", (req, res) => {
   //Admin Login
   if (user.username == "Admin" && req.body.password == user.password) {
     /*res.render("admin", {
-    username: "Admin", books: data.Books
+    username: "Admin", books: data
     })*/
     req.session.currentUser = user;
     req.session.userLoggedIn = true;
@@ -140,10 +146,10 @@ app.post("/post", (req, res) => {
     name: req.body.name,
     author: req.body.author,
     price: req.body.price,
-    id: data.Books.length + 1,
+    id: data.length + 1,
   };
 
-  data.Books.push(nbook);
+  data.push(nbook);
 
   fs.writeFileSync("./data.json", JSON.stringify(data));
 
@@ -154,8 +160,8 @@ app.post("/post", (req, res) => {
 
 app.delete("/delete/:id", (req, res) => {
   const id = req.params.id;
-  const book = data.Books.find((book) => book.id == id);
-  data.Books = data.Books.filter((book) => book.id != id);
+  const book = data.find((book) => book.id == id);
+  data = data.filter((book) => book.id != id);
   fs.writeFileSync("./data.json", JSON.stringify(data));
   res.send(`The book ${book.name} has been deleted`);
 });
@@ -163,8 +169,8 @@ app.delete("/delete/:id", (req, res) => {
 app.put("/put/:id", (req, res) => {
   const edBook = req.body;
   const id = req.params.id;
-  const book = data.Books.find((book) => book.id == id);
-  data.Books.splice(data.Books.indexOf(book), 1, edBook);
+  const book = data.find((book) => book.id == id);
+  data.splice(data.indexOf(book), 1, edBook);
   fs.writeFileSync("./data.json", JSON.stringify(data));
   res.send(`The book ${book.name} has been updated`);
 });

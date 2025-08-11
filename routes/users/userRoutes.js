@@ -1,23 +1,29 @@
 const express = require('express');
+const mongoose = require('mongoose')
+const Books = require('../../models/book-model.js')
 const userRouter = express.Router();
 const cookie = require('cookie-parser');
 const bodyParser = require('body-parser');
 const fs = require('fs');
 const { timingSafeEqual } = require('crypto');
 const { Recoverable } = require('repl');
-const { Recoverable } = require('repl');
 const App = express();
 
 App.use(cookie());
-App.use(bodyParser.json());
+App.use(bodyParser.json()); 
 App.use(bodyParser.urlencoded({ extended: true }));
-const data = JSON.parse(fs.readFileSync("./data.json"));
+let data;
+Books.find().then((result) => {data = result
+console.log(data.length)
+  
+})
+
 const users = JSON.parse(fs.readFileSync("./users.json"));
 
 // Download route – ensure we compare IDs correctly (using parseInt)
 userRouter.get('/download/:id', (req, res) => {
   const bookId = parseInt(req.params.id);
-  const Book = data.Books.find(book => book.id === bookId);
+  const Book = data.find(book => book.id === bookId);
   res.render('users/download', { book: Book });
 });
 
@@ -30,47 +36,19 @@ userRouter.get('/savedBooks', (req, res) => {
   res.render('users/savedBooks', {
     username: user.username,
     User: user
-    User: user
   });
 });
 
-userRouter.get('/readingList', (req, res) => {
-  if (!req.session.currentUser) return res.redirect('/');
-
-
-  // Get fresh user data from users.json
-  const users = JSON.parse(fs.readFileSync('./users.json'));
-  const user = users.users.find(u => u.id == req.session.currentUser.id);
-
-
-  // Ensure arrays exist
-  if (!user.currentlyReading) user.currentlyReading = [];
-  if (!user.readBooks) user.readBooks = [];
-
-  let usersReadBooks = []
-  user.readingHistory.forEach(rb => {
-    let book = data.Books.find(b => b.id == rb);
-    if (book) usersReadBooks.push(book)
-  });
-  res.render('users/readingList', {
-    User: user,
-    readBooks: usersReadBooks
-
-  let usersReadBooks =[]
-  user.readBooks.forEach(rb => {
-      let book = data.Books.find(b => b.id == rb);
-      if (book) usersReadBooks.push(book)
-    });
-    res.render('users/readingList', {
-      User: user,
-      readBooks: usersReadBooks
-    });
-  });
+userRouter.get("/readingGoals", (req,res) => {
+  const user = req.session.currentUser;
+  res.render("readingGoals", {
+    username: user.username,
+  })
+})
 
   userRouter.get('/News', (req, res) => {
     res.render('users/news');
   });
-
   // Save a book route
   userRouter.post('/saveBook', (req, res) => {
     const Book = req.body;
@@ -102,7 +80,7 @@ userRouter.get('/readingList', (req, res) => {
   });
 
   // NEW: Start Reading route – adds a book to the user's currentlyReading list
-  userRouter.post('/startReading/:id', (req, res) => {
+/*  userRouter.post('/startReading/:id', (req, res) => {
     const id = req.params.id;
     const book = data.Books.find(book => book.id == id)// The book details (including id, title, cover, etc.)
     const userId = req.cookies.userId;
@@ -125,7 +103,6 @@ userRouter.get('/readingList', (req, res) => {
       user.readBooks.push(id)
     }
 
-
     // If using session, update it so that the UI (rendered ejs) is up-to-date.
     if (req.session.currentUser && req.session.currentUser.id == userId) {
       if (req.session.currentUser && req.session.currentUser.id == userId) {
@@ -135,7 +112,8 @@ userRouter.get('/readingList', (req, res) => {
 
       fs.writeFileSync('./users.json', JSON.stringify(users));
       res.sendStatus(200);
-    });
+    };
+  }*/
   userRouter.get('/getCurrentlyReading', (req, res) => {
     if (!req.session.currentUser) return res.sendStatus(404);
     const user = req.session.currentUser;
@@ -201,8 +179,8 @@ userRouter.get('/readingList', (req, res) => {
 
     const index = User.currentlyReading.indexOf(bookToUpdate);
     let diffInPages;
-    User.currentlyReading[index].currentPage ? diffInPages = page - User.currentlyReading[index].currentPage : console.log(page)
-    if (page > bookToUpdate.pageCount) page = bookToUpdate.pageCount;
+    User.currentlyReading[index].currentPage ? diffInPages = page - User.currentlyReading[index].currentPage : console.log(bookToUpdate)
+  /*  if (page > bookToUpdate.pageCount) page = bookToUpdate.pageCount; */
     User.currentlyReading[index].currentPage = page;
     User.readingGoal.totalGoalPages = pageCountTotal;
     User.readingGoal.currentGoalPages = pageCountCurrent;
